@@ -1,0 +1,34 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Tên</th>
+      <th>Giá</th>
+      <th>Ảnh</th>
+      <th>Trạng thái</th>
+      <th>Hành động</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products; let i = index">
+      <td style="vertical-align: middle">{{ i + 1 }}</td>
+      <td style="vertical-align: middle">{{ product.name }}</td>
+      <td style="vertical-align: middle">{{ product.price }}</td>
+      <td style="vertical-align: middle">
+        <img src="{{ product.img }}" alt="" />
+      </td>
+      <td style="vertical-align: middle">
+        {{ product.status ? "Còn hàng" : "Hết hàng" }}
+      </td>
+      <td>
+        <button class="btn btn-success" (click)="showDetail(product.id)">
+          Chi tiết
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<app-product-detail
+  [data]="productDetail"
+  *ngIf="productDetail"
+></app-product-detail>
