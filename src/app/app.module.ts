@@ -4,13 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { AdminComponent } from './pages/admin/admin.component';
-import { HelloComponent } from './hello/hello.component';
-import { NewComponent } from './new/new.component';
-
+import { ProductsComponent } from './components/products/products.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { ProductAddComponent } from './components/product-add/product-add.component';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, AdminComponent, HelloComponent, NewComponent],
+  declarations: [AppComponent, ProductsComponent, ProductDetailComponent, ProductAddComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
