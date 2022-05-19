@@ -1,2 +1,5 @@
-<app-products [data]="products"></app-products>
-<app-product-add (onHandleAdd)="addProduct($event)"></app-product-add>
+<div class="container">
+  <app-header></app-header>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+</div>

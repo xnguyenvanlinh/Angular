@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Product } from './models';
+import { IProduct } from './models';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,7 @@ import { Product } from './models';
 })
 export class AppComponent {
   title = 'Web208';
-  products: Product[] = [
+  products: any = [
     {
       id: 1,
       img: 'https://picsum.photos/50/50',
