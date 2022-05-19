@@ -1,2 +1,3 @@
-<p>Tên : {{ productDetail.name }}</p>
-<p>Giá : {{ productDetail.price }}</p>
+<p>{{ productDetail?.name }}</p>
+<img src="{{ productDetail?.images[0] }}" alt="" />
+<button (click)="getProduct()">Call API</button>

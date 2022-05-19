@@ -13,22 +13,20 @@
     <tr *ngFor="let product of products; let i = index">
       <td style="vertical-align: middle">{{ i + 1 }}</td>
       <td style="vertical-align: middle">{{ product.name }}</td>
-      <td style="vertical-align: middle">{{ product.price }}</td>
       <td style="vertical-align: middle">
-        <img src="{{ product.img }}" alt="" />
+        {{ product.price | currency: "VND" }}
       </td>
       <td style="vertical-align: middle">
-        {{ product.status ? "Còn hàng" : "Hết hàng" }}
+        <img
+          src="{{ product.images[0] }}"
+          alt=""
+          style="width: 50px; object-fit: cover"
+        />
       </td>
+
       <td>
-        <button class="btn btn-success" (click)="showDetail(product.id)">
-          Chi tiết
-        </button>
+        <a routerLink="{{ product.id }}" class="btn btn-success">Chi tiết</a>
       </td>
     </tr>
   </tbody>
 </table>
-<app-product-detail
-  [data]="productDetail"
-  *ngIf="productDetail"
-></app-product-detail>

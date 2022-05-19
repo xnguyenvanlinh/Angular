@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Product } from 'src/app/models';
+import { ActivatedRoute } from '@angular/router';
+import { IProduct } from 'src/app/models';
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-products',
@@ -7,12 +9,15 @@ import { Product } from 'src/app/models';
   styleUrls: ['./products.component.css'],
 })
 export class ProductsComponent implements OnInit {
-  @Input('data') products!: Product[];
-
-  constructor() {}
-  productDetail!: Product;
-  showDetail(id: number) {
-    this.productDetail = this.products.find((product) => product.id === id)!;
+  // @Input('data') products!: Product[];
+  products: IProduct[] = [];
+  constructor(
+    public routes: ActivatedRoute,
+    private productService: ProductService
+  ) {}
+  ngOnInit(): void {
+    this.productService.list().subscribe((data) => {
+      this.products = data;
+    });
   }
-  ngOnInit(): void {}
 }
