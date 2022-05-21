@@ -10,6 +10,7 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class ProductsComponent implements OnInit {
   // @Input('data') products!: Product[];
+  loading: boolean = true;
   products: IProduct[] = [];
   constructor(
     public routes: ActivatedRoute,
@@ -17,7 +18,14 @@ export class ProductsComponent implements OnInit {
   ) {}
   ngOnInit(): void {
     this.productService.list().subscribe((data) => {
+      this.loading = false;
       this.products = data;
     });
+  }
+  removeProduct(id: string) {
+    if (window.confirm('Bạn có muốn xoá không '))
+      this.productService.destroy(id).subscribe(() => {
+        this.products = this.products.filter((product) => product.id !== id);
+      });
   }
 }

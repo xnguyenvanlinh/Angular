@@ -1,11 +1,11 @@
-<table class="table">
+<div *ngIf="loading">loading...</div>
+<table class="table" *ngIf="!loading">
   <thead>
     <tr>
       <th>#</th>
       <th>Tên</th>
       <th>Giá</th>
       <th>Ảnh</th>
-      <th>Trạng thái</th>
       <th>Hành động</th>
     </tr>
   </thead>
@@ -25,7 +25,15 @@
       </td>
 
       <td>
-        <a routerLink="{{ product.id }}" class="btn btn-success">Chi tiết</a>
+        <button routerLink="{{ product.id }}" class="me-3 btn btn-success">
+          Chi tiết
+        </button>
+        <button routerLink="edit/{{ product.id }}" class="btn btn-warning me-3">
+          Sửa
+        </button>
+        <button class="btn btn-danger" (click)="removeProduct(product.id)">
+          Xoá
+        </button>
       </td>
     </tr>
   </tbody>

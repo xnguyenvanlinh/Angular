@@ -13,6 +13,7 @@ import { ClientComponent } from './components/client/client.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductService } from './services/product.service';
+import { ProductEditComponent } from './components/product-edit/product-edit.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +24,7 @@ import { ProductService } from './services/product.service';
     FooterComponent,
     ClientComponent,
     AdminComponent,
+    ProductEditComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [ProductService],

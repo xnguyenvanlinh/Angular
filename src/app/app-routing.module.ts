@@ -4,6 +4,7 @@ import { AdminComponent } from './components/admin/admin.component';
 import { ClientComponent } from './components/client/client.component';
 import { ProductAddComponent } from './components/product-add/product-add.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { ProductEditComponent } from './components/product-edit/product-edit.component';
 import { ProductsComponent } from './components/products/products.component';
 const routes: Routes = [
   {
@@ -33,6 +34,10 @@ const routes: Routes = [
           {
             path: ':id',
             component: ProductDetailComponent,
+          },
+          {
+            path: 'edit/:id',
+            component: ProductEditComponent,
           },
         ],
       },

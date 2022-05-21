@@ -27,59 +27,6 @@
   ],
   "products": [
     {
-      "name": "Casio AE-1200WHD-1AVDF – Nam – Kính Nhựa – Quartz (Pin) – Dây Kim Loại",
-      "price": 1308000,
-      "quantity": "76",
-      "desc": "Đồng hồ nam Casio AE1200WHD có mặt đồng hồ vuông to với phong cách thể thao, mặt số điện tử với những tính năng hiện đại tiện dụng, kết hợp với dây đeo bằng kim loại đem lại vẻ mạnh mẽ cá tính dành cho phái nam",
-      "images": [
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp1-anh1.webp?alt=media&token=122b2985-59da-4990-8dbe-6a0418dc41bd",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp1-anh2.webp?alt=media&token=99832bcf-8f9b-42ad-b142-5c7c6448f960",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp1-anh3.webp?alt=media&token=3c8b0a4b-be30-4309-b6c4-f348abe7055d",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp1-anh4.webp?alt=media&token=5e138f97-a8b8-48bb-9059-3f28b60c1532",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp1-anh5.webp?alt=media&token=de903808-9fda-4b5c-9086-ffe753ca9903",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp1-anh6.webp?alt=media&token=79933a75-2169-4f70-8810-782e2d5efc55",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp1-anh7.webp?alt=media&token=d34efa30-7c6c-4910-bec0-746cb8dab9e7",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp1-anh8.webp?alt=media&token=f9cd498f-ba5a-49df-b556-213d0267749a",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp1-anh9.webp?alt=media&token=386d456e-4986-4561-9506-cb970c43b3f6"
-      ],
-      "categoryId": "1",
-      "id": "1"
-    },
-    {
-      "name": "Casio MTP-1302D-7A1VDF – Nam – Quartz (Pin) – Dây Kim Loại",
-      "price": 1283000,
-      "quantity": "235",
-      "desc": "Đồng hồ Casio MTP-1302D-7A1VDF có kiểu dáng truyền thống với mặt số tròn, niềng được tạo khía nổi bật quanh nền trắng mặt số, kim chỉ và vạch số được phủ bạc tạo phản quang nổi bật trên nền số",
-      "images": [
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp2-anh1.webp?alt=media&token=47f64ab1-cd9e-4978-a168-784f9edcd419",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp2-anh2.webp?alt=media&token=e3157836-3969-43a8-a379-5291aad698ed",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp2-anh3.webp?alt=media&token=ab437aba-b795-4adc-95ad-f3ed0a054cfc",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp2-anh4.webp?alt=media&token=52dd043c-aec5-4c38-8d9b-62b6c553087a",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp2-anh5.webp?alt=media&token=a87d06cf-a378-4079-9daa-403fb4c128f7",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp2-anh6.webp?alt=media&token=df66621f-69f6-4b8f-8699-c393505121ab"
-      ],
-      "categoryId": "1",
-      "id": "2"
-    },
-    {
-      "name": "Citizen AK5003-05A – Nam – Quartz (Pin) – Dây Da",
-      "price": 3740000,
-      "quantity": "88",
-      "desc": "Mẫu Citizen AK5003-05A phiên bản tính năng lịch trăng sao nổi bật trên nền mặt số size 42mm với họa tiết trải tia, vỏ máy tone vàng hồng thời trang sang trọng",
-      "images": [
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp3-anh1.webp?alt=media&token=277f9e44-4a18-41bd-8fa9-9f4349856cb1",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp3-anh2.webp?alt=media&token=3cde57bb-0ad9-4b10-8207-dac8d9080f2e",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp3-anh3.webp?alt=media&token=9a4d278f-6282-4728-aa31-15f780bac158",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp3-anh4.webp?alt=media&token=6e20e8f0-fb28-4f8e-87eb-8cb15f25fbed",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp3-anh5.webp?alt=media&token=69660602-0a99-4d01-9721-b51db136feaa",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp3-anh6.webp?alt=media&token=13318128-3574-4b35-b230-fb9d823155d0",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp3-anh7.webp?alt=media&token=49413586-74a3-4066-ace3-4b0546013b08",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp3-anh8.webp?alt=media&token=f3257833-695e-4f89-bac1-56120ced71ec"
-      ],
-      "categoryId": "1",
-      "id": "3"
-    },
-    {
       "name": "Doxa D173TCM – Nam – Kính Sapphire – Automatic (Tự Động) – Dây Kim Loại",
       "price": 3740000,
       "quantity": "12",
