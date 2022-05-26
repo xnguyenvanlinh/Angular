@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { IProduct } from 'src/app/models';
 import { ProductService } from 'src/app/services/product.service';
+import { NzTableModule } from 'ng-zorro-antd/table';
 
 @Component({
   selector: 'app-products',
@@ -17,6 +18,9 @@ export class ProductsComponent implements OnInit {
     private productService: ProductService
   ) {}
   ngOnInit(): void {
+    this.getProducts();
+  }
+  getProducts() {
     this.productService.list().subscribe((data) => {
       this.loading = false;
       this.products = data;
@@ -25,7 +29,7 @@ export class ProductsComponent implements OnInit {
   removeProduct(id: string) {
     if (window.confirm('Bạn có muốn xoá không '))
       this.productService.destroy(id).subscribe(() => {
-        this.products = this.products.filter((product) => product.id !== id);
+        this.getProducts();
       });
   }
 }

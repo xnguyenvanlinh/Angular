@@ -1,4 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { IProduct } from 'src/app/models';
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-product-add',
@@ -7,14 +10,23 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class ProductAddComponent implements OnInit {
   @Output() onHandleAdd = new EventEmitter();
-  product: { name: string; price: number } = {
+  product: IProduct = {
+    id: '',
     name: '',
     price: 0,
+    quantity: '',
+    desc: '',
+    categoryId: '',
+    images: [],
   };
+  constructor(private router: Router, private productService: ProductService) {}
   handleAdd() {
-    this.onHandleAdd.emit(this.product);
+    // this.onHandleAdd.emit(this.product);
+    this.productService.create(this.product).subscribe(() => {
+      this.router.navigate(['admin/product']);
+    });
   }
-  constructor() {}
-
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log(this.product);
+  }
 }

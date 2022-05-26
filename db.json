@@ -27,37 +27,6 @@
   ],
   "products": [
     {
-      "name": "Doxa D173TCM – Nam – Kính Sapphire – Automatic (Tự Động) – Dây Kim Loại",
-      "price": 3740000,
-      "quantity": "12",
-      "desc": "Mẫu Doxa nam D173TCM khoác lên phong cách đẳng cấp khi mặt số với thiết kế tinh xảo đính kèm các viên kim cương nổi bật trên nền kính Sapphire thời trang sang trọng phối cùng mẫu dây đeo demi",
-      "images": [
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp4-anh1.webp?alt=media&token=639a6ed9-bc8e-483e-b76a-7ec1f4dfedc6",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp4-anh2.webp?alt=media&token=16b92f38-3ffe-4d4d-8361-981e1e330923",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp4-anh3.webp?alt=media&token=24bf8d13-0225-443a-a9b8-a06084eacb3d",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp4-anh4.webp?alt=media&token=0170e0ba-4dde-4fe2-bbb9-0577db68f3ad",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp4-anh5.webp?alt=media&token=621e4cce-1286-4c67-a7a2-33c0db12ead8",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp4-anh6.webp?alt=media&token=91837bfc-795e-4638-b8e8-b0a8f3099e90"
-      ],
-      "categoryId": "1",
-      "id": "4"
-    },
-    {
-      "name": "Doxa D221RSV – Nữ – Kính Sapphire – Automatic (Tự Động) – Dây Kim Loại",
-      "price": 39470000,
-      "quantity": "4",
-      "desc": "Ẩn bên dưới mặt kính Sapphire với nền mặt số được gia công tinh xảo đính các viên kim cương tạo nên phụ kiện thời trang sang trọng dành cho phái đẹp với phiên bản Doxa D221RSV.",
-      "images": [
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2F18_D221RSV-399x399.jpg?alt=media&token=e3200db8-6f6c-49e6-b22e-8c89335490f5",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2FD221RSV-399x399.jpg?alt=media&token=561d874e-a12c-4257-b6dd-130b6a7e1da8",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2FDOXA-D221RSV-_-D220RSV-1-399x399.jpg?alt=media&token=82127645-62ee-43fb-9d7b-0c9978a69d46",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2FDOXA-D221RSV-_-D220RSV-3-399x399.jpg?alt=media&token=d60d8b13-620e-4535-a0ed-dd8d27eb2564",
-        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2FDOXA-D221RSV-_-D220RSV-4-399x399.jpg?alt=media&token=526933e9-7f3e-43e4-8770-7f9dca6d2848"
-      ],
-      "categoryId": "2",
-      "id": "5"
-    },
-    {
       "name": "Casio Nữ – Quartz (Pin) – Dây Kim Loại (LTP-V001G-9BUDF)",
       "price": 1086000,
       "quantity": "432",
