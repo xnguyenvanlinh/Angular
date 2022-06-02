@@ -1,13 +1,10 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductsComponent } from './components/products/products.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { ProductAddComponent } from './components/product-add/product-add.component';
-import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ClientComponent } from './components/client/client.component';
 import { AdminComponent } from './components/admin/admin.component';
@@ -16,28 +13,52 @@ import { ProductService } from './services/product.service';
 import { ProductEditComponent } from './components/product-edit/product-edit.component';
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { en_US } from 'ng-zorro-antd/i18n';
-import { registerLocaleData } from '@angular/common';
+import { CommonModule, registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IconsProviderModule } from './icons-provider.module';
-import { NzLayoutModule } from 'ng-zorro-antd/layout';
-import { NzMenuModule } from 'ng-zorro-antd/menu';
-
+import { ProductsComponent } from './components/products/products.component';
+import { NzMessageService } from 'ng-zorro-antd/message';
+import { NgZorroAntdModule } from './ng-zorro-antd.module';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { ScrollingModule } from '@angular/cdk/scrolling';
+import { SignupComponent } from './pages/signup/signup.component';
+import { SigninComponent } from './pages/signin/signin.component';
+import { HeaderComponent } from './components/header/header.component';
 registerLocaleData(en);
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
     ProductsComponent,
     ProductDetailComponent,
     ProductAddComponent,
-    HeaderComponent,
     FooterComponent,
     ClientComponent,
     AdminComponent,
     ProductEditComponent,
+    SignupComponent,
+    SigninComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule, BrowserAnimationsModule, IconsProviderModule, NzLayoutModule, NzMenuModule],
-  providers: [ProductService, { provide: NZ_I18N, useValue: en_US }],
+  imports: [
+    CommonModule,
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    DragDropModule,
+    ScrollingModule,
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    IconsProviderModule,
+    NgZorroAntdModule,
+  ],
+  exports: [CommonModule, FormsModule, ReactiveFormsModule, NgZorroAntdModule],
+  providers: [
+    ProductService,
+    { provide: NZ_I18N, useValue: en_US },
+    { provide: NzMessageService },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

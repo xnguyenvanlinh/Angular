@@ -1,22 +1,9 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" routerLink="/">Trang chủ</a>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link navbar-brand" routerLink="admin">Quản trị</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input
-          class="form-control me-2"
-          type="search"
-          placeholder=""
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-success" type="submit">Tìm</button>
-      </form>
-    </div>
-  </div>
-</nav>
+<div class="topnav" id="myTopnav">
+  <a routerLink="" class="active">Trang chủ</a>
+  <a routerLink="admin">Quản trị</a>
+  <a routerLink="">Tin tức</a>
+  <button (click)="logout()" *ngIf="isShow">Đăng xuất</button>
+  <button routerLink="signin" *ngIf="!isShow">Đăng nhập</button>
+  <button routerLink="signup" *ngIf="!isShow">Đăng ký</button>
+</div>
+<router-outlet></router-outlet>
