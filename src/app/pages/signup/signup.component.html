@@ -1,0 +1,94 @@
+<h2 style="width: fit-content; margin: 30px auto">Đăng ký</h2>
+
+<form
+  nz-form
+  [formGroup]="validateForm"
+  (ngSubmit)="submitForm()"
+  style="margin-inline: auto"
+>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="7" nzRequired>Tài khoản</nz-form-label>
+    <nz-form-control
+      [nzSpan]="12"
+      nzHasFeedback
+      nzValidatingTip="Đang kiểm tra..."
+      [nzErrorTip]="userErrorTpl"
+    >
+      <input nz-input formControlName="userName" placeholder="Nhập tài khoản" />
+      <ng-template #userErrorTpl let-control>
+        <ng-container *ngIf="control.hasError('required')">Email!</ng-container>
+        <ng-container *ngIf="control.hasError('duplicated')"
+          >The username is redundant!</ng-container
+        >
+      </ng-template>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="7" nzRequired>Email</nz-form-label>
+    <nz-form-control [nzSpan]="12" nzHasFeedback [nzErrorTip]="emailErrorTpl">
+      <input
+        nz-input
+        formControlName="email"
+        placeholder="Địa chỉ email"
+        type="email"
+      />
+      <ng-template #emailErrorTpl let-control>
+        <ng-container *ngIf="control.hasError('email')"
+          >Định dạng Email không hợp lệ!</ng-container
+        >
+        <ng-container *ngIf="control.hasError('required')"
+          >Vui lòng nhập địa chỉ Email!</ng-container
+        >
+      </ng-template>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="7" nzRequired>Mật khẩu</nz-form-label>
+    <nz-form-control
+      [nzSpan]="12"
+      nzHasFeedback
+      nzErrorTip="Mật khẩu tối thiểu 6 ký tự"
+    >
+      <input
+        nz-input
+        type="password"
+        placeholder="Nhập mật khẩu"
+        minlength="6"
+        formControlName="password"
+        (ngModelChange)="validateConfirmPassword()"
+      />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="7" nzRequired>Nhập lại mật khẩu</nz-form-label>
+    <nz-form-control
+      [nzSpan]="12"
+      nzHasFeedback
+      [nzErrorTip]="passwordErrorTpl"
+    >
+      <input
+        nz-input
+        type="password"
+        formControlName="confirm"
+        placeholder="Nhập lại mật khẩu"
+        minlength="6"
+      />
+      <ng-template #passwordErrorTpl let-control>
+        <ng-container *ngIf="control.hasError('required')"
+          >Mật khẩu tối thiểu 6 ký tự!</ng-container
+        >
+        <ng-container *ngIf="control.hasError('confirm')"
+          >Nhập lại mật khẩu không chính xác!</ng-container
+        >
+      </ng-template>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-control [nzOffset]="7" [nzSpan]="12">
+      <button nz-button nzType="primary" [disabled]="!validateForm.valid">
+        Đăng ký
+      </button>
+      <button nz-button (click)="resetForm($event)">Nhập lại</button>
+    </nz-form-control>
+  </nz-form-item>
+</form>
