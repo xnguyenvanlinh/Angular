@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { IProduct } from 'src/app/models';
 import { ProductService } from 'src/app/services/product.service';
+import { NzUploadFile } from 'ng-zorro-antd/upload';
 
 @Component({
   selector: 'app-product-edit',
@@ -16,10 +17,20 @@ export class ProductEditComponent implements OnInit {
     private routes: Router
   ) {}
   id!: string;
+  defaultFileList: NzUploadFile[] = [];
   ngOnInit(): void {
     this.id = this.activatedRoute.snapshot.params['id'];
     this.productService.get(this.id).subscribe((data) => {
       this.product = data;
+      this.defaultFileList = data.images.map((image, index) => {
+        return {
+          uid: `-${index + 1}`,
+          name: `anh${index + 1}.webp`,
+          status: 'done',
+          url: image,
+          thumbUrl: image,
+        };
+      });
     });
   }
   updateProduct() {

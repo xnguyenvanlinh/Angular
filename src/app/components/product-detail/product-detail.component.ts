@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import data from '../../data';
 import { IProduct } from 'src/app/models';
 import { ProductService } from 'src/app/services/product.service';
 
@@ -25,7 +24,6 @@ export class ProductDetailComponent implements OnInit {
     this.productService.get(this.id).subscribe((data) => {
       this.productDetail = data;
     });
-    this.productDetail2 = data.find((item) => item.id == +this.id)!;
   }
   getProduct() {
     console.log(this.productDetail);

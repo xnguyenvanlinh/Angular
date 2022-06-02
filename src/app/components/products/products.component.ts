@@ -1,35 +1,41 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { IProduct } from 'src/app/models';
+import { Component, OnInit } from '@angular/core';
+import { IProduct } from '../../models';
 import { ProductService } from 'src/app/services/product.service';
-import { NzTableModule } from 'ng-zorro-antd/table';
-
+import { NzMessageService } from 'ng-zorro-antd/message';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css'],
 })
-export class ProductsComponent implements OnInit {
-  // @Input('data') products!: Product[];
-  loading: boolean = true;
-  products: IProduct[] = [];
+export class ProductsComponent {
   constructor(
-    public routes: ActivatedRoute,
-    private productService: ProductService
+    private productService: ProductService,
+    private nzMessageService: NzMessageService
   ) {}
+  listProduct!: IProduct[];
   ngOnInit(): void {
-    this.getProducts();
+    this.getProduct();
   }
-  getProducts() {
+  getProduct() {
     this.productService.list().subscribe((data) => {
-      this.loading = false;
-      this.products = data;
+      this.listProduct = data;
     });
   }
-  removeProduct(id: string) {
-    if (window.confirm('Bạn có muốn xoá không '))
-      this.productService.destroy(id).subscribe(() => {
-        this.getProducts();
-      });
+  cancel(): void {
+    // this.nzMessageService.info('click cancel');
+  }
+
+  confirm(id: string): void {
+    this.productService.destroy(id).subscribe(() => {
+      this.getProduct();
+    });
+    this.nzMessageService.info('Xoá thành công');
+  }
+  expandSet = new Set<any>();
+  onExpandChange(id: string, checked: boolean): void {
+    if (checked) {
+      this.expandSet.add(id);
+    } else {
+      this.expandSet.delete(id);
+    }
   }
 }
