@@ -27,6 +27,71 @@
   ],
   "products": [
     {
+      "name": "Casio MTP-1302D-7A1VDF – Nam – Quartz (Pin) – Dây Kim Loại",
+      "price": 1283000,
+      "quantity": "235",
+      "desc": "Đồng hồ Casio MTP-1302D-7A1VDF có kiểu dáng truyền thống với mặt số tròn, niềng được tạo khía nổi bật quanh nền trắng mặt số, kim chỉ và vạch số được phủ bạc tạo phản quang nổi bật trên nền số",
+      "images": [
+        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp2-anh1.webp?alt=media&token=47f64ab1-cd9e-4978-a168-784f9edcd419",
+        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp2-anh2.webp?alt=media&token=e3157836-3969-43a8-a379-5291aad698ed",
+        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp2-anh3.webp?alt=media&token=ab437aba-b795-4adc-95ad-f3ed0a054cfc",
+        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp2-anh4.webp?alt=media&token=52dd043c-aec5-4c38-8d9b-62b6c553087a",
+        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp2-anh5.webp?alt=media&token=a87d06cf-a378-4079-9daa-403fb4c128f7",
+        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp2-anh6.webp?alt=media&token=df66621f-69f6-4b8f-8699-c393505121ab"
+      ],
+      "categoryId": "1",
+      "id": "2"
+    },
+    {
+      "name": "Citizen AK5003-05A – Nam – Quartz (Pin) – Dây Da",
+      "price": 3740000,
+      "quantity": "88",
+      "desc": "Mẫu Citizen AK5003-05A phiên bản tính năng lịch trăng sao nổi bật trên nền mặt số size 42mm với họa tiết trải tia, vỏ máy tone vàng hồng thời trang sang trọng",
+      "images": [
+        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp3-anh1.webp?alt=media&token=277f9e44-4a18-41bd-8fa9-9f4349856cb1",
+        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp3-anh2.webp?alt=media&token=3cde57bb-0ad9-4b10-8207-dac8d9080f2e",
+        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp3-anh3.webp?alt=media&token=9a4d278f-6282-4728-aa31-15f780bac158",
+        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp3-anh4.webp?alt=media&token=6e20e8f0-fb28-4f8e-87eb-8cb15f25fbed",
+        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp3-anh5.webp?alt=media&token=69660602-0a99-4d01-9721-b51db136feaa",
+        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp3-anh6.webp?alt=media&token=13318128-3574-4b35-b230-fb9d823155d0",
+        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp3-anh7.webp?alt=media&token=49413586-74a3-4066-ace3-4b0546013b08",
+        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp3-anh8.webp?alt=media&token=f3257833-695e-4f89-bac1-56120ced71ec"
+      ],
+      "categoryId": "1",
+      "id": "3"
+    },
+    {
+      "name": "Doxa D173TCM – Nam – Kính Sapphire – Automatic (Tự Động) – Dây Kim Loại",
+      "price": 3740000,
+      "quantity": "12",
+      "desc": "Mẫu Doxa nam D173TCM khoác lên phong cách đẳng cấp khi mặt số với thiết kế tinh xảo đính kèm các viên kim cương nổi bật trên nền kính Sapphire thời trang sang trọng phối cùng mẫu dây đeo demi",
+      "images": [
+        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp4-anh1.webp?alt=media&token=639a6ed9-bc8e-483e-b76a-7ec1f4dfedc6",
+        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp4-anh2.webp?alt=media&token=16b92f38-3ffe-4d4d-8361-981e1e330923",
+        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp4-anh3.webp?alt=media&token=24bf8d13-0225-443a-a9b8-a06084eacb3d",
+        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp4-anh4.webp?alt=media&token=0170e0ba-4dde-4fe2-bbb9-0577db68f3ad",
+        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp4-anh5.webp?alt=media&token=621e4cce-1286-4c67-a7a2-33c0db12ead8",
+        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2Fsp4-anh6.webp?alt=media&token=91837bfc-795e-4638-b8e8-b0a8f3099e90"
+      ],
+      "categoryId": "1",
+      "id": "4"
+    },
+    {
+      "name": "Doxa D221RSV – Nữ – Kính Sapphire – Automatic (Tự Động) – Dây Kim Loại",
+      "price": 39470000,
+      "quantity": "4",
+      "desc": "Ẩn bên dưới mặt kính Sapphire với nền mặt số được gia công tinh xảo đính các viên kim cương tạo nên phụ kiện thời trang sang trọng dành cho phái đẹp với phiên bản Doxa D221RSV.",
+      "images": [
+        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2F18_D221RSV-399x399.jpg?alt=media&token=e3200db8-6f6c-49e6-b22e-8c89335490f5",
+        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2FD221RSV-399x399.jpg?alt=media&token=561d874e-a12c-4257-b6dd-130b6a7e1da8",
+        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2FDOXA-D221RSV-_-D220RSV-1-399x399.jpg?alt=media&token=82127645-62ee-43fb-9d7b-0c9978a69d46",
+        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2FDOXA-D221RSV-_-D220RSV-3-399x399.jpg?alt=media&token=d60d8b13-620e-4535-a0ed-dd8d27eb2564",
+        "https://firebasestorage.googleapis.com/v0/b/assignment-6a191.appspot.com/o/images%2FDOXA-D221RSV-_-D220RSV-4-399x399.jpg?alt=media&token=526933e9-7f3e-43e4-8770-7f9dca6d2848"
+      ],
+      "categoryId": "2",
+      "id": "5"
+    },
+    {
       "name": "Casio Nữ – Quartz (Pin) – Dây Kim Loại (LTP-V001G-9BUDF)",
       "price": 1086000,
       "quantity": "432",
@@ -132,38 +197,31 @@
   "users": [
     {
       "email": "admin@gmail.com",
-      "password": "$2a$10$74U7eEpB4deLwZoYYWAd/.SlqQmgvg2unofdYNVkFVTAjQEaWxtmO",
-      "permission": "admin",
-      "id": 1,
-      "name": "anc"
+      "password": "$2a$10$i7zvzo39Uxe4NKUGegHwqOFzPWkNTun.q5H5stqucVkRPKP0Jp72i",
+      "userName": "admin",
+      "role": 1,
+      "id": 1
+    },
+    {
+      "email": "test@gmail.com",
+      "password": "$2a$10$Epit8tKTjnI5jrpCoyDi3u9c14wiFrbDjkL1CQIocFNkpLyV6BhgK",
+      "userName": "test",
+      "role": 0,
+      "id": 2
     },
     {
       "email": "linh@gmail.com",
-      "password": "$2a$10$5U2aaK7UC4iusXlHg0XQ/OemWz4Hnj7rAuZ4j4W0tTuctFRRarZOS",
-      "permission": "member",
-      "id": 2,
-      "name": "Nguyễn Văn Linh"
+      "password": "$2a$10$upKsRSa8BvWXpmS3qqwoOewLqPxZ4EivJEIgN3IHgF9qj/N3sDtjG",
+      "userName": "aksdkjas",
+      "role": 0,
+      "id": 3
     },
     {
-      "email": "admin1@gmail.com",
-      "password": "$2a$10$159fA4JaAYBdISw6GQCN/erpKw8inYZdWlYoUZyrRvjGO7IwjlWkS",
-      "permission": "member",
-      "id": 4,
-      "name": "Nguyễn Quang Vinh"
-    },
-    {
-      "email": "admin12@gmail.com",
-      "password": "$2a$10$zIwbxfcUCAPskEdoKKz2tOFmJqdBLMAbl77CoSzb7TqQav8XEiEQO",
-      "permission": "member",
-      "id": 5,
-      "name": "Nguyễn Đức Mạnh"
-    },
-    {
-      "email": "dungtm@gmail.com",
-      "password": "$2a$10$lQeuBqwSv8cube89br3jOeS6.OQhZUyCJZsq5FpRpJqKOjwAiF0sC",
-      "permission": "member",
-      "id": 10,
-      "name": "Nguyễn Thanh Phong"
+      "email": "linh2@gmail.com",
+      "password": "$2a$10$FHEtMfzTBFv1vxewQLwwIOgjwL8evTQcc1ZG68y9hPJWTMUSnkSdi",
+      "userName": "aksdkjas",
+      "role": 0,
+      "id": 4
     }
   ],
   "carts": [
