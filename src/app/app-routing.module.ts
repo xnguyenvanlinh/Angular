@@ -9,18 +9,40 @@ import { ProductEditComponent } from './components/product-edit/product-edit.com
 import { ProductsComponent } from './components/products/products.component';
 import { SigninComponent } from './pages/signin/signin.component';
 import { SignupComponent } from './pages/signup/signup.component';
+import { PermissionComponent } from './pages/permission/permission.component';
+import { HomeComponent } from './pages/home/home.component';
+import { WorksComponent } from './pages/works/works.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { DetailworkComponent } from './pages/detailwork/detailwork.component';
 const routes: Routes = [
   {
     path: '',
     component: ClientComponent,
     children: [
       {
-        path: 'signup',
-        component: SignupComponent,
+        path: '',
+        component: HomeComponent,
+      },
+
+      {
+        path: 'works',
+        component: WorksComponent,
       },
       {
-        path: 'signin',
+        path: 'blog',
+        component: BlogComponent,
+      },
+      {
+        path: 'detailwork',
+        component: DetailworkComponent,
+      },
+      {
+        path: 'login',
         component: SigninComponent,
+      },
+      {
+        path: 'signup',
+        component: SignupComponent,
       },
     ],
   },

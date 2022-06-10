@@ -1,9 +1,29 @@
-<div class="topnav" id="myTopnav">
-  <a routerLink="" class="active">Trang chủ</a>
-  <a routerLink="admin">Quản trị</a>
-  <a routerLink="">Tin tức</a>
-  <button (click)="logout()" *ngIf="isShow">Đăng xuất</button>
-  <button routerLink="signin" *ngIf="!isShow">Đăng nhập</button>
-  <button routerLink="signup" *ngIf="!isShow">Đăng ký</button>
-</div>
-<router-outlet></router-outlet>
+<header class="max-w-[860px] m-auto flex justify-between flex-col md:flex-row">
+  <div class="w-full flex justify-between border-b-2 md:border-none">
+    <div class="logo p-4 text-xl text-[#000000] font-semibold"></div>
+    <div id="menu" class="py-6 mr-6 block md:hidden">
+      <img src="../../../assets/images/menu.png" alt="" />
+    </div>
+  </div>
+  <ul class="list-nav hidden md:flex justify-end shadow-xl md:shadow-none">
+    <li>
+      <a
+        routerLink="works"
+        class="block p-4 text-xl text-[#000000] font-semibold"
+        >Works</a
+      >
+    </li>
+    <li>
+      <a
+        routerLink="blog"
+        class="block p-4 text-xl text-[#000000] font-semibold"
+        >Blog</a
+      >
+    </li>
+    <li>
+      <a routerLink="" class="block p-4 text-xl text-[#000000] font-semibold"
+        >Contact</a
+      >
+    </li>
+  </ul>
+</header>

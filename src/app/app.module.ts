@@ -25,6 +25,11 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 import { SignupComponent } from './pages/signup/signup.component';
 import { SigninComponent } from './pages/signin/signin.component';
 import { HeaderComponent } from './components/header/header.component';
+import { PermissionComponent } from './pages/permission/permission.component';
+import { HomeComponent } from './pages/home/home.component';
+import { WorksComponent } from './pages/works/works.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { DetailworkComponent } from './pages/detailwork/detailwork.component';
 registerLocaleData(en);
 @NgModule({
   declarations: [
@@ -39,6 +44,11 @@ registerLocaleData(en);
     ProductEditComponent,
     SignupComponent,
     SigninComponent,
+    PermissionComponent,
+    HomeComponent,
+    WorksComponent,
+    BlogComponent,
+    DetailworkComponent,
   ],
   imports: [
     CommonModule,
