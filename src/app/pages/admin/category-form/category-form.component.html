@@ -1,0 +1,32 @@
+<form
+  nz-form
+  [formGroup]="validateForm"
+  (ngSubmit)="submitForm()"
+  autocomplete="off"
+>
+  <h3 nz-typography>{{ heading }}</h3>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="5" nzRequired nzFor="name"
+      >Tên danh mục</nz-form-label
+    >
+    <nz-form-control [nzSpan]="12" nzErrorTip="Vui lòng nhập tên danh mục!">
+      <input
+        id="name"
+        type="text"
+        nz-input
+        formControlName="name"
+        ngModel="{{ data_category.name }}"
+      />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-control [nzSpan]="12" [nzOffset]="5">
+      <button nz-button nzType="primary" class="mr-3">
+        {{ text_node }}
+      </button>
+      <button nz-button nzType="default" (click)="backToPage()">
+        Quay lại
+      </button>
+    </nz-form-control>
+  </nz-form-item>
+</form>
