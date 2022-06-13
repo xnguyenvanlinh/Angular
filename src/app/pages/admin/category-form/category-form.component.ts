@@ -17,12 +17,8 @@ export class CategoryFormComponent implements OnInit {
   heading: string = '';
   text_node: string = '';
   action: string = '';
-  data_category: Category = {
-    posts: undefined,
-    projects: undefined,
-    id: '',
-    name: '',
-  };
+  data_category: any = {};
+
   constructor(
     private fb: FormBuilder,
     private router: Router,
@@ -32,9 +28,11 @@ export class CategoryFormComponent implements OnInit {
     private categoryProjectService: CategoryProjectService,
     private _location: Location
   ) {}
+
   backToPage() {
     this._location.back();
   }
+
   ngOnInit(): void {
     const param = this.activatedRoute.snapshot.params['id'];
     const { url } = this.router;
@@ -42,13 +40,13 @@ export class CategoryFormComponent implements OnInit {
       this.text_node = 'Cập nhật';
       url.slice(0, 13) === '/admin/cate_p'
         ? ((this.heading = ' Chỉnh sửa danh mục dự án'),
-          (this.action = 'update_project'),
+          (this.action = 'update_cate_project'),
           this.categoryProjectService.get(param).subscribe((data) => {
             this.data_category = data;
           }),
           this.title.setTitle(this.heading))
         : ((this.heading = ' Chỉnh sửa danh mục bài viết'),
-          (this.action = 'update_blog'),
+          (this.action = 'update_cate_blog'),
           this.title.setTitle(this.heading),
           this.categoryBlogService.get(param).subscribe((data) => {
             this.data_category = data;
@@ -57,16 +55,17 @@ export class CategoryFormComponent implements OnInit {
       this.text_node = 'Thêm';
       url === '/admin/cate_blog/add'
         ? ((this.heading = 'Thêm danh mục bài viết'),
-          (this.action = 'add_blog'),
+          (this.action = 'add_cate_blog'),
           this.title.setTitle(this.heading))
         : ((this.heading = 'Thêm danh mục dự án'),
-          (this.action = 'add_project'),
+          (this.action = 'add_cate_project'),
           this.title.setTitle(this.heading));
     }
     this.validateForm = this.fb.group({
       name: [null, [Validators.required]],
     });
   }
+
   submitForm(): void {
     if (this.validateForm.valid) {
       const data = {
@@ -74,43 +73,43 @@ export class CategoryFormComponent implements OnInit {
         name: this.validateForm.value.name,
       };
       switch (this.action) {
-        case 'add_blog':
+        case 'add_cate_blog':
           this.categoryBlogService.create(data).subscribe(
             () => {
               this.router.navigateByUrl('admin/cate_blog');
             },
             (error) => {
-              console.log(error);
+              alert(error);
             }
           );
           break;
-        case 'add_project':
+        case 'add_cate_project':
           this.categoryProjectService.create(data).subscribe(
             () => {
               this.router.navigateByUrl('admin/cate_project');
             },
             (error) => {
-              console.log(error);
+              alert(error);
             }
           );
           break;
-        case 'update_blog':
+        case 'update_cate_blog':
           this.categoryBlogService.update(data).subscribe(
             () => {
               this.router.navigateByUrl('admin/cate_blog');
             },
             (error) => {
-              console.log(error);
+              alert(error);
             }
           );
           break;
-        case 'update_project':
+        case 'update_cate_project':
           this.categoryProjectService.update(data).subscribe(
             () => {
               this.router.navigateByUrl('admin/cate_project');
             },
             (error) => {
-              console.log(error);
+              alert(error);
             }
           );
           break;

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CategoryBlogService } from 'src/app/services/category-blog.service';
 import { CategoryProjectService } from 'src/app/services/category-project.service';
-
+import { _date } from 'src/app/utils';
 @Component({
   selector: 'app-category',
   templateUrl: './category.component.html',
@@ -18,7 +18,7 @@ export class CategoryComponent implements OnInit {
     private categoryBlogService: CategoryBlogService,
     private categoryProjectServer: CategoryProjectService
   ) {}
-  confirm(id: string | number): void {
+  confirm(id: string): void {
     this.isBlog
       ? this.categoryBlogService.destroy(id).subscribe(
           () => {
@@ -41,6 +41,7 @@ export class CategoryComponent implements OnInit {
     this.router.url === '/admin/cate_blog'
       ? (this.getCateBlog(), (this.isBlog = true))
       : (this.getCateProject(), (this.isProject = true));
+    console.log(this.listOfCategory);
   }
   getCateBlog() {
     this.categoryBlogService.read().subscribe((data) => {
@@ -58,17 +59,18 @@ export class CategoryComponent implements OnInit {
             return {
               key: index,
               id: item.id,
-              name: item.title,
-              image: item.image,
-              intro: item.short_desc,
-              createdAt: item.createdAt,
-              updatedAt: item.updatedAt,
+              name: item.name,
+              images: item.images,
+              desc: item.desc,
+              createdAt: _date(item.createdAt),
+              updatedAt: _date(item.updatedAt),
             };
           })
         );
       }
     });
   }
+
   getCateProject() {
     this.categoryProjectServer.read().subscribe((data) => {
       this.category = data.map((category, index) => {
@@ -86,10 +88,10 @@ export class CategoryComponent implements OnInit {
               key: index,
               id: item.id,
               name: item.name,
-              image: item.image,
-              intro: item.short_desc,
-              createdAt: item.createdAt,
-              updatedAt: item.updatedAt,
+              images: item.images,
+              desc: item.desc,
+              createdAt: _date(item.createdAt),
+              updatedAt: _date(item.updatedAt),
             };
           })
         );
