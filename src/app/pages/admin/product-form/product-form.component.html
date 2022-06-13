@@ -1,0 +1,81 @@
+<form nz-form [formGroup]="validateForm">
+  <nz-form-item>
+    <nz-form-label [nzSpan]="7" nzFor="category" nzRequired
+      >Danh mục</nz-form-label
+    >
+    <nz-form-control [nzSpan]="12" nzErrorTip="Vui lòng chọn danh mục!">
+      <nz-select
+        id="category"
+        formControlName="category"
+        nzPlaceHolder="Chọn danh mục"
+        ngModel="{{ category_old }}"
+      >
+        <nz-option
+          nzValue="{{ category.id }}"
+          nzLabel="{{ category.name }}"
+          *ngFor="let category of categories"
+        ></nz-option>
+      </nz-select>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="7" nzFor="name" nzRequired>{{
+      heading
+    }}</nz-form-label>
+    <nz-form-control
+      [nzSpan]="12"
+      nzHasFeedback
+      nzValidatingTip="Validating..."
+      nzErrorTip="Vui lòng không bỏ trống trường này"
+    >
+      <input
+        nz-input
+        ngModel="{{ data_product.name || data_product.title }}"
+        formControlName="name"
+        placeholder="{{ placeholder }}"
+      />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="7" nzRequired="">Ảnh</nz-form-label>
+    <nz-form-control>
+      <nz-upload
+        nzAccept="image/*"
+        [(nzFileList)]="fileList"
+        nzListType="picture"
+        nzSize="3072"
+      >
+        <button nz-button>
+          <i nz-icon nzType="upload"></i>
+          Chọn ảnh
+        </button>
+      </nz-upload>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="7" nzRequired nzFor="desc">Chi tiết</nz-form-label>
+    <nz-form-control [nzSpan]="12" nzErrorTip="Vui lòng nhập chi tiết">
+      <textarea
+        formControlName="desc"
+        nz-input
+        ngModel="{{ data_product.desc }}"
+        rows="2"
+        placeholder="Chi tiết"
+      ></textarea>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-control [nzOffset]="7" [nzSpan]="12">
+      <button
+        nz-button
+        nzType="primary"
+        [disabled]="!validateForm.valid || fileList.length == 0"
+        (click)="submitForm()"
+        class="mr-3"
+      >
+        {{ text_node }}
+      </button>
+      <button nz-button (click)="resetForm($event)">Đặt lại</button>
+    </nz-form-control>
+  </nz-form-item>
+</form>
