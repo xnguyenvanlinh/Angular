@@ -19,17 +19,57 @@
       nzMode="inline"
       [nzInlineCollapsed]="isCollapsed"
     >
-      <li nz-submenu nzOpen nzTitle="Sản phẩm" nzIcon="dashboard">
+      <li
+        nz-menu-item
+        routerLink="/admin/profile"
+        nz-tooltip
+        nzTitle="Navigation One"
+        nzSelected
+      >
+        <i nz-icon nzType="user"></i>
+        <span>Giới thiệu</span>
+      </li>
+      <li nz-submenu nzTitle="Danh mục bài viết" nzIcon="folder">
         <ul>
           <li nz-menu-item>
-            <a routerLink="/admin/product">Danh sách</a>
+            <a routerLink="/admin/cate_blog">Quản lý danh mục</a>
           </li>
           <li nz-menu-item>
-            <a routerLink="/admin/product/add">Thêm mới</a>
+            <a routerLink="/admin/cate_blog/add">Thêm mới</a>
           </li>
         </ul>
       </li>
-      <li nz-submenu nzOpen nzTitle="Form" nzIcon="form">
+      <li nz-submenu nzTitle="Bài viết" nzIcon="book">
+        <ul>
+          <li nz-menu-item>
+            <a routerLink="/admin/blog">Quản lý bài viết</a>
+          </li>
+          <li nz-menu-item>
+            <a routerLink="/admin/blog/add">Thêm mới</a>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu nzTitle="Danh mục dự án" nzIcon="folder">
+        <ul>
+          <li nz-menu-item>
+            <a routerLink="/admin/cate_project">Quản lý danh mục</a>
+          </li>
+          <li nz-menu-item>
+            <a routerLink="/admin/cate_project/add">Thêm mới</a>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu nzTitle="Dự án" nzIcon="credit-card">
+        <ul>
+          <li nz-menu-item>
+            <a routerLink="/admin/project">Quản lý dự án</a>
+          </li>
+          <li nz-menu-item>
+            <a routerLink="/admin/project/add">Thêm mới</a>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu nzTitle="Form" nzIcon="form">
         <ul>
           <li nz-menu-item nzMatchRouter>
             <a>Basic Form</a>
