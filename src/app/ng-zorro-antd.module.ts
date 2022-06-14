@@ -8,6 +8,11 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzUploadModule } from 'ng-zorro-antd/upload';
 import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
+import { NzBadgeModule } from 'ng-zorro-antd/badge';
+import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
+import { NzDividerModule } from 'ng-zorro-antd/divider';
+import { NzSelectModule } from 'ng-zorro-antd/select';
+import { NzTypographyModule } from 'ng-zorro-antd/typography';
 
 @NgModule({
   exports: [
@@ -20,6 +25,11 @@ import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
     NzInputModule,
     NzUploadModule,
     NzPageHeaderModule,
+    NzBadgeModule,
+    NzDropDownModule,
+    NzDividerModule,
+    NzSelectModule,
+    NzTypographyModule,
   ],
 })
 export class NgZorroAntdModule {}

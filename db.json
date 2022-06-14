@@ -5,96 +5,130 @@
       "password": "$2a$10$5kN8FX1eVG8EBo1EUxzVP.GG3mMDegp5FJaJwsniMx7.kn.Mp5A4q",
       "userName": "Nguyễn Văn Linh",
       "role": 1,
-      "id": 1
+      "id": "1"
     }
   ],
   "user": {
-    "name": "Nguyễn Văn Linh",
-    "majors": "Công nhân",
+    "name": "Linh",
+    "position": "Frontend Developer",
     "about": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente consectetur minima aut eligendi ducimus, ex quam maiores obcaecati dolore quia quod maxime. Suscipit, magni ipsam. Vero impedit tempore ipsam quaerat?",
-    "cv": "không có"
+    "cv": ""
   },
-  "posts": [
-    {
-      "id": 1,
-      "image": "https://picsum.photos/536/354",
-      "createAt": "",
-      "categoryPostId": 2,
-      "short-desc": "lorem",
-      "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente consectetur minima aut eligendi ducimus, ex quam maiores obcaecati dolore quia quod maxime. Suscipit, magni ipsam. Vero impedit tempore ipsam quaerat?"
-    },
-    {
-      "id": 2,
-      "image": "https://picsum.photos/536/354",
-      "createAt": "",
-      "categoryPostId": 2,
-      "short-desc": "lorem",
-      "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente consectetur minima aut eligendi ducimus, ex quam maiores obcaecati dolore quia quod maxime. Suscipit, magni ipsam. Vero impedit tempore ipsam quaerat?"
-    },
-    {
-      "id": 3,
-      "image": "https://picsum.photos/536/354",
-      "createAt": "",
-      "categoryPostId": 2,
-      "short-desc": "lorem",
-      "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente consectetur minima aut eligendi ducimus, ex quam maiores obcaecati dolore quia quod maxime. Suscipit, magni ipsam. Vero impedit tempore ipsam quaerat?"
-    }
-  ],
   "categoryPosts": [
     {
-      "id": 1,
-      "name": "sida"
+      "id": "1",
+      "name": "Express, Handlebars"
     },
     {
-      "id": 2,
-      "name": "sida"
+      "id": "2",
+      "name": "Figma, Icon Design"
     },
     {
-      "id": 3,
-      "name": "sida"
+      "id": "3",
+      "name": "Design, Pattern"
     }
   ],
-  "projects": [
+  "posts": [
     {
-      "id": 1,
-      "name": "project one",
-      "image": "https://picsum.photos/536/354",
-      "createAt": "asjduiasiuqiwuei",
-      "short-desc": "lorem",
-      "categoryProjectId": "2",
-      "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente consectetur minima aut eligendi ducimus, ex quam maiores obcaecati dolore quia quod maxime. Suscipit, magni ipsam. Vero impedit tempore ipsam quaerat?"
+      "name": "Making a design system from scratch",
+      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "createdAt": 1655134727828,
+      "updatedAt": 1655134727828,
+      "images": [
+        "http://res.cloudinary.com/xnguyenvanlinh/image/upload/v1655134729/detailwork2_r5mqnt.png"
+      ],
+      "categoryPostId": "3",
+      "id": "5"
     },
     {
-      "id": 2,
-      "name": "project two",
-      "image": "https://picsum.photos/536/354",
-      "createAt": "asjduiasiuqiwuei",
-      "categoryProjectId": "3",
-      "short-desc": "lorem",
-      "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente consectetur minima aut eligendi ducimus, ex quam maiores obcaecati dolore quia quod maxime. Suscipit, magni ipsam. Vero impedit tempore ipsam quaerat?"
+      "name": "Creating pixel perfect icons in Figma",
+      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "createdAt": 1655134822422,
+      "updatedAt": 1655134822422,
+      "images": [
+        "http://res.cloudinary.com/xnguyenvanlinh/image/upload/v1655134821/detailwork_qzqhah.png"
+      ],
+      "categoryPostId": "2",
+      "id": "6"
     },
     {
-      "id": 3,
-      "name": "project three",
-      "image": "https://picsum.photos/536/354",
-      "createAt": "asjduiasiuqiwuei",
-      "categoryProjectId": "1",
-      "short-desc": "lorem",
-      "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente consectetur minima aut eligendi ducimus, ex quam maiores obcaecati dolore quia quod maxime. Suscipit, magni ipsam. Vero impedit tempore ipsam quaerat?"
+      "name": "UI Interactions of the week",
+      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "createdAt": 1655142238362,
+      "updatedAt": 1655142238362,
+      "images": [
+        "http://res.cloudinary.com/xnguyenvanlinh/image/upload/v1655142238/detailwork2_ibmotx.png"
+      ],
+      "categoryPostId": "1",
+      "id": "yc4L_E0"
+    },
+    {
+      "name": "iiii",
+      "desc": "gdfgdgfdggd",
+      "createdAt": 1655186389517,
+      "updatedAt": 1655186389517,
+      "images": [
+        "http://res.cloudinary.com/xnguyenvanlinh/image/upload/v1655186388/user_nwrgzc.jpg"
+      ],
+      "categoryPostId": "1",
+      "id": "fSLt7io"
     }
   ],
   "categoryProjects": [
     {
       "id": "1",
-      "name": "categoryproject one"
+      "name": "Design"
     },
     {
       "id": "2",
-      "name": "categoryproject two"
+      "name": "App Development"
     },
     {
       "id": "3",
-      "name": "categoryproject three"
+      "name": "Web Developement"
+    },
+    {
+      "name": "Illustration",
+      "id": "_JkmeSV"
+    },
+    {
+      "name": "Typography",
+      "id": "86u4lJH"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Designing Dashboards",
+      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "createdAt": 1655142137603,
+      "updatedAt": 1655142137603,
+      "images": [
+        "http://res.cloudinary.com/xnguyenvanlinh/image/upload/v1655142136/Rectangle_30_r6vtkc.png"
+      ],
+      "categoryProjectId": "1",
+      "id": "lz7WLkE"
+    },
+    {
+      "name": "Vibrant Portraits of 2020",
+      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "createdAt": 1655142176003,
+      "updatedAt": 1655142176003,
+      "images": [
+        "http://res.cloudinary.com/xnguyenvanlinh/image/upload/v1655142174/Rectangle_32_ai07qg.png"
+      ],
+      "categoryProjectId": "_JkmeSV",
+      "id": "eNxSS2D"
+    },
+    {
+      "name": " 36 Days of Malayalam type",
+      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "createdAt": 1655142205612,
+      "updatedAt": 1655142205612,
+      "images": [
+        "http://res.cloudinary.com/xnguyenvanlinh/image/upload/v1655142204/Rectangle_34_osafal.jpg"
+      ],
+      "categoryProjectId": "86u4lJH",
+      "id": "0gDVhXs"
     }
   ]
 }

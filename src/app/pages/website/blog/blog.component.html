@@ -1,0 +1,24 @@
+<section>
+  <div class="container mx-auto px-[18px] xl:px-[235px]">
+    <h2 class="text-[30px] lg:text-[44px] font-bold py-[25px] lg:py-[23px]">
+      Blog
+    </h2>
+    <div
+      class="border-b-2 border-[#E0E0E0] pb-[25px] mt-[20px]"
+      *ngFor="let blog of blogs"
+    >
+      <h3 class="text-[26px] lg:text-[30px] font-medium">
+        {{ blog.name }}
+      </h3>
+      <p class="py-[10px]">
+        <span class="pr-[15px] border-r-2 border-black py-0">2022</span>
+        <span class="text-[#8695A4] pl-[15px]">
+          <a href="">{{ blog.categoryPost.name }}</a>
+        </span>
+      </p>
+      <p>
+        {{ blog.desc }}
+      </p>
+    </div>
+  </div>
+</section>

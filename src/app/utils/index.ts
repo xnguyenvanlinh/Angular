@@ -1,4 +1,5 @@
 export default function isAdmin() {
+  if (!localStorage.getItem('user')) return false;
   const token: any = localStorage.getItem('user');
   const { email } = JSON.parse(atob(token.split('.')[1]));
   return email === 'admin@gmail.com';

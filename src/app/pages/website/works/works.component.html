@@ -1,0 +1,37 @@
+<section>
+  <div class="container mx-auto px-[18px] xl:px-[235px]">
+    <h2 class="text-[30px] lg:text-[44px] font-bold py-[25px] lg:py-[23px]">
+      Work
+    </h2>
+    <div
+      class="sm:grid sm:grid-cols-[246px,auto] gap-[17px] p-[10px] lg:pb-[49px] mb-[32px] border-b-2 border-[#E0E0E0]"
+      *ngFor="let data of projects"
+    >
+      <div>
+        <img
+          class="sm:w-[246px] sm:h-[180px] w-[100%] object-contain"
+          src="{{ data.images[0] }}"
+          alt=""
+        />
+      </div>
+      <div>
+        <h2
+          class="text-[22px] my-[10px] sm:my-0 lg:text-[30px] font-bold leading-44px"
+        >
+          <a routerLink="/detailwork/{{ data.id }}">{{ data.name }}</a>
+        </h2>
+        <div class="grid grid-cols-[62px,auto] items-center gap-[27px]">
+          <p
+            class="leading-[26px] my-[10px] lg:my-[20px] font-bold bg-[#142850] text-[18px] text-white max-h-[25px] w-fit px-[10.5px] rounded-[16px]"
+          >
+            2022
+          </p>
+          <p class="text-[#8695A4]">{{ data.categoryProject.name }}</p>
+        </div>
+        <p class="text-[16px] pt-[2px]">
+          {{ data.desc }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

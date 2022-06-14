@@ -3,17 +3,18 @@ import { Routes, RouterModule } from '@angular/router';
 import { AdminGuard } from './guards/admin.guard';
 import { AdminComponent } from './components/admin/admin.component';
 import { ClientComponent } from './components/client/client.component';
-import { ProductAddComponent } from './components/product-add/product-add.component';
-import { ProductDetailComponent } from './components/product-detail/product-detail.component';
-import { ProductEditComponent } from './components/product-edit/product-edit.component';
-import { ProductsComponent } from './components/products/products.component';
-import { SigninComponent } from './pages/signin/signin.component';
-import { SignupComponent } from './pages/signup/signup.component';
-import { PermissionComponent } from './pages/permission/permission.component';
-import { HomeComponent } from './pages/home/home.component';
-import { WorksComponent } from './pages/works/works.component';
-import { BlogComponent } from './pages/blog/blog.component';
-import { DetailworkComponent } from './pages/detailwork/detailwork.component';
+import { SigninComponent } from './pages/website/signin/signin.component';
+import { SignupComponent } from './pages/website/signup/signup.component';
+import { HomeComponent } from './pages/website/home/home.component';
+import { WorksComponent } from './pages/website/works/works.component';
+import { BlogComponent } from './pages/website/blog/blog.component';
+import { DetailworkComponent } from './pages/website/detailwork/detailwork.component';
+import { ProfileComponent } from './pages/admin/profile/profile.component';
+import { CategoryComponent } from './pages/admin/category/category.component';
+import { CategoryFormComponent } from './pages/admin/category-form/category-form.component';
+import { ProductComponent } from './pages/admin/product/product.component';
+import { ProductFormComponent } from './pages/admin/product-form/product-form.component';
+import { ProfileEditComponent } from './pages/admin/profile-edit/profile-edit.component';
 const routes: Routes = [
   {
     path: '',
@@ -33,7 +34,7 @@ const routes: Routes = [
         component: BlogComponent,
       },
       {
-        path: 'detailwork',
+        path: 'detailwork/:id',
         component: DetailworkComponent,
       },
       {
@@ -53,29 +54,94 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: 'product',
+        redirectTo: 'profile',
         pathMatch: 'full',
       },
       {
-        path: 'product',
+        path: 'profile',
         children: [
           {
             path: '',
-            component: ProductsComponent,
+            component: ProfileComponent,
+          },
+          {
+            path: 'edit',
+            component: ProfileEditComponent,
+          },
+        ],
+      },
+      {
+        path: 'cate_blog',
+        children: [
+          {
+            path: '',
+            component: CategoryComponent,
           },
           {
             path: 'add',
-            component: ProductAddComponent,
+            component: CategoryFormComponent,
           },
           {
-            path: ':id',
-            component: ProductDetailComponent,
-          },
-          {
-            path: 'edit/:id',
-            component: ProductEditComponent,
+            path: ':id/edit',
+            component: CategoryFormComponent,
           },
         ],
+      },
+      {
+        path: 'cate_project',
+        children: [
+          {
+            path: '',
+            component: CategoryComponent,
+          },
+          {
+            path: 'add',
+            component: CategoryFormComponent,
+          },
+          {
+            path: ':id/edit',
+            component: CategoryFormComponent,
+          },
+        ],
+      },
+      {
+        path: 'project',
+        children: [
+          {
+            path: '',
+            component: ProductComponent,
+          },
+
+          {
+            path: 'add',
+            component: ProductFormComponent,
+          },
+          {
+            path: ':id/edit',
+            component: ProductFormComponent,
+          },
+        ],
+      },
+      {
+        path: 'blog',
+        children: [
+          {
+            path: '',
+            component: ProductComponent,
+          },
+          {
+            path: 'add',
+            component: ProductFormComponent,
+          },
+          {
+            path: ':id/edit',
+            component: ProductFormComponent,
+          },
+        ],
+      },
+      {
+        path: '',
+        component: ProductComponent,
       },
     ],
   },
