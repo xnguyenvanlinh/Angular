@@ -1,0 +1,10 @@
+<p>Họ tên : {{ profile.name }}</p>
+<p>Vị trí công việc: {{ profile.position }}</p>
+<p>Giới thiệu : {{ profile.about }}</p>
+<button
+  routerLink="/admin/profile/edit"
+  (click)="click()"
+  class="bg-[#1890ff] text-white text-[15px] py-[5px] px-[20px]"
+>
+  Cập nhật
+</button>

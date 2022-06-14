@@ -1,0 +1,61 @@
+<form nz-form [formGroup]="validateForm">
+  <nz-form-item>
+    <nz-form-label [nzSpan]="7" nzRequired>Họ tên</nz-form-label>
+    <nz-form-control
+      [nzSpan]="17"
+      nzHasFeedback
+      nzErrorTip="Vui lòng nhập họ tên"
+    >
+      <input
+        nz-input
+        formControlName="name"
+        ngModel="{{ profile.name }}"
+        placeholder="Họ tên"
+      />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="7" nzRequired>Vị trí công việc</nz-form-label>
+    <nz-form-control
+      [nzSpan]="17"
+      nzHasFeedback
+      nzErrorTip="Vui lòng nhập vị trí công việc"
+    >
+      <input
+        nz-input
+        formControlName="position"
+        ngModel="{{ profile.position }}"
+        placeholder="Vị trí công việc"
+      />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label nzSpan="7" nzRequired>Hồ sơ</nz-form-label>
+    <nz-form-control nzSpan="17">
+      <input type="file" nz-input (change)="handleChange($event)" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="7" nzRequired>Giới thiệu</nz-form-label>
+    <nz-form-control [nzSpan]="17" nzErrorTip="Vui lòng nhập giới thiệu">
+      <textarea
+        formControlName="about"
+        nz-input
+        rows="2"
+        ngModel="{{ profile.about }}"
+      ></textarea>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-control [nzOffset]="7" [nzSpan]="12">
+      <button
+        nz-button
+        nzType="primary"
+        [disabled]="!validateForm.valid"
+        (click)="submitForm()"
+      >
+        Cập nhật
+      </button>
+    </nz-form-control>
+  </nz-form-item>
+</form>
