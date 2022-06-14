@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { BlogService } from 'src/app/services/blog.service';
 import { ProjectService } from 'src/app/services/project.service';
+import { _date } from 'src/app/utils';
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
@@ -43,12 +44,24 @@ export class ProductComponent implements OnInit {
   }
   getBlog() {
     this.blogService.read().subscribe((data) => {
-      this.product = data;
+      this.product = data.map((product: any) => {
+        return {
+          ...product,
+          createdAt: _date(product.createdAt),
+          updatedAt: _date(product.updatedAt),
+        };
+      });
     });
   }
   getProject() {
     this.projectService.read().subscribe((data) => {
-      this.product = data;
+      this.product = data.map((product: any) => {
+        return {
+          ...product,
+          createdAt: _date(product.createdAt),
+          updatedAt: _date(product.updatedAt),
+        };
+      });
     });
   }
   expandSet = new Set<any>();

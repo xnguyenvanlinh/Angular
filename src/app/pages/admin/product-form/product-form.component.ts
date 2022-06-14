@@ -129,7 +129,7 @@ export class ProductFormComponent implements OnInit {
           this.projectService.create(dataProject).subscribe(
             (data) => {
               console.log(data);
-              // this.router.navigateByUrl('admin/project');
+              this.router.navigateByUrl('admin/project');
             },
             (error) => {
               alert(error);
@@ -148,7 +148,7 @@ export class ProductFormComponent implements OnInit {
           this.blogService.create(dataBlog).subscribe(
             (data) => {
               console.log(data);
-              // this.router.navigateByUrl('admin/blog')
+              this.router.navigateByUrl('admin/blog');
             },
             (error) => {
               alert(error);
@@ -167,6 +167,7 @@ export class ProductFormComponent implements OnInit {
           const updateProject = (data: any) => {
             this.projectService.update(data).subscribe((data) => {
               console.log(data);
+              this.router.navigateByUrl('admin/project');
             });
           };
           if (this.checkImageNew().length == 0) {
@@ -199,6 +200,7 @@ export class ProductFormComponent implements OnInit {
           const updateBlog = (data: any) => {
             this.projectService.update(data).subscribe((data) => {
               console.log(data);
+              this.router.navigateByUrl('admin/blog');
             });
           };
           if (this.checkImageNew().length == 0) {
